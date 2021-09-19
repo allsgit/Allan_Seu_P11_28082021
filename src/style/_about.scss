@@ -1,0 +1,43 @@
+/* <div className="fiability"></div>
+<div className="respect"></div>
+<div className="service"></div>
+<div className="responsability"></div> */
+.about-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .menu-composant{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 1023px;
+        height: 47px;
+        background-color: #FF6060;
+        margin: 31px 0 0 0;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+         img{
+             transform: rotate(180deg);
+             margin: 0 10px;
+         }
+    
+    }
+    .responsability{
+        margin-bottom: 201px;
+    }
+    .explain-1,.explain-2, .explain-3,.explain-4{
+        width: 1023px;
+        height: 146px;
+        background-color: #F6F6F6;
+        color: #FF6060;
+        display: flex;
+         p{
+             margin: 20px;
+         }
+
+    }
+
+}

@@ -1,0 +1,33 @@
+.error-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .error{
+        display: flex;
+        justify-content: center;
+        color: #FF6060;
+        font-size: 288px;
+        font-weight: bold;
+        margin: 0;
+        margin-top: 74px;
+        
+        }
+    .error-msg{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        color: #FF6060;
+
+    }
+    .back-to-link{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        color: #FF6060;
+        font-weight: bold;
+        margin: 100px 0 159px 0;
+
+    }
+        
+
+}
