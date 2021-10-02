@@ -1,17 +1,17 @@
-import "../style/App.scss";
-import Logo from "./Logo";
-import React from "react";
-import NavBar from "./Nav";
-import Banner from "./Banner";
-import Banner2 from "./banner2";
-import D_404 from "./D_404.js";
-import "../style/_header.scss";
-import Gallery from "./gallery";
-import Footer from "./footer";
-import About from "./About";
-import FicheLogement from "./FicheLogement";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Switch } from "react-router";
+import '../style/App.scss';
+import Logo from './Logo';
+import React from 'react';
+import NavBar from './Nav';
+import Banner from './Banner';
+import Banner2 from './banner2';
+import D_404 from './D_404.js';
+import '../style/_header.scss';
+import Gallery from './gallery';
+import Footer from './footer';
+import About from './About';
+import FicheLogement from './FicheLogement';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Switch } from 'react-router';
 
 function App() {
   return (
@@ -31,7 +31,12 @@ function App() {
           <Switch>
             <Route path="/" exact component={Gallery} />
             <Route path="/apropos" exact component={About} />
-            <Route path="/logement" exact component={FicheLogement} />
+            {/* Il faut declarer la route, avec le parametre, ici l'ID de l'appartement (:id)*/}
+            <Route
+              name="logement"
+              path="/logement/:id"
+              component={FicheLogement}
+            />
             <Route path="/" component={D_404} />
           </Switch>
         </main>
