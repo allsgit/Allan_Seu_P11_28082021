@@ -6,8 +6,12 @@ class Vendor_Info extends React.Component {
   render() {
     return (
       <Fragment>
-        <h3 className="vendor-name">FRANCK DUPONT</h3>
-        <div className="vendor-profil-img"></div>
+        <div className="vendorBlock">
+          <h3 className="vendor-name">{this.props.VendorName.name}</h3>
+          <div className="vendor-profil-img">
+            <img src={this.props.UserPicture.picture}></img>
+          </div>
+        </div>
       </Fragment>
     );
   }

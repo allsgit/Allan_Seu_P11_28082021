@@ -1,29 +1,35 @@
-.information-div{
+.information-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
 
-.tag-line{
+.tag-line {
     display: flex;
     flex-direction: row;
     color: black;
-        .tag{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 115px;
-            height: 25px;
-            background-color: red;
-            border-radius: 10px;
-            color: white;
-            font-weight: bold;
-            margin: 0 10px 0 0;
-        }
+
+    .tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px;
+
+        /*             width: 115px;
+         */
+
+  /*             height: 25px;
+*/
+
+        background-color: red;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        margin: 0 10px 0 0;
+    }
 }
-.menu-composant{
+
+.menu-composant {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -36,60 +42,76 @@
     color: white;
     font-weight: bold;
 }
-.sub-menu-composant{
+
+.sub-menu-composant {
     width: 582px;
     height: 246px;
     background-color: #F6F6F6;
     color: #FF6060;
     display: flex;
-     p{
-         margin: 20px;
-     }
 
-
+    p {
+        margin: 20px;
+    }
 }
-.menu-composant-wrap{
+
+.menu-composant-wrap {
     margin: 0px 44px 20px;
 }
 
-    .item-description{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+.item-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .item-information {
     display: flex;
     justify-content: space-between;
     width: 1240px;
     color: #FF6060;
 
-
-    .item-town{
+    .item-town {
         margin: 0 0 10px 0;
     }
-    .item-name{
-    margin: 30px 0 10px 0;
+
+    .item-name {
+        margin: 30px 0 10px 0;
     }
 
-    .vendor-information{
+    .vendor-information {
         display: flex;
+        flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        width: 174px;
-    
-    .vendor-profil-img{
-        background-color: grey;
-        border-radius: 50%;
-        color: #FF6060;
-        width: 64px;
-        height: 64px;
-        margin: 30px 0
-    }
-    .vendor-name{
-        color: #FF6060;
-        width: 93px;
-    }
-}
 
+        .vendor-profil-img {
+            background-color: grey;
+            border-radius: 50%;
+            color: #FF6060;
+            width: 120px;
+            height: 120px;
+            margin: 30px 0;
+            overflow: hidden;
+        }
 
+        .vendor-name {
+            color: #FF6060;
+            width: 93px;
+        }
+        .rate-line{
+            margin: 0 0 0 33px;
+        }
+        .rating {
+            width: 20px;
+            height: 20px;
+          
+        }
+
+        .vendorBlock {
+            display: flex;
+            align-items: center;
+            margin-right: 50px;
+        }
+    }
 }
