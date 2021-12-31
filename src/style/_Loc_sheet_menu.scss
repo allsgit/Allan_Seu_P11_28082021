@@ -1,0 +1,57 @@
+.menu-sheet-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 47%;
+    height: auto;
+
+    .sheet-menu-composant {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 47px;
+        background-color: #FF6060;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        padding: 0 5px;
+
+        .arrow {
+            transition: 0.4s;
+        }
+
+        .close-arrow {
+            transition: 0.4s;
+            transform: rotate(180deg);
+            color: red;
+        }
+    }
+
+    .sheet-menu-explain {
+        background-color: #F6F6F6;
+        width: 101%;
+        height: 250px;
+        transition: 0.3s;
+    }
+
+    .sheet-menu-explain-closed {
+        background-color: #F6F6F6;
+        width: 101%;
+        height: 0px;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+
+    .description-text {
+        padding: 12px;
+        font-size: 22px;
+        color: #FF6060;
+        font-weight: 400; // à ajouter
+    }
+    
+    .item-description{
+        justify-content: space-between;
+    }
+}

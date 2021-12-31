@@ -51,9 +51,25 @@
     border-radius: 1px;
     background-color: black;
    overflow: hidden;
-        img{
+        .logement-ban{
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        .white-arrow-left{
+            position: absolute;
+            left: 0;
+        }
+        .white-arrow-right{
+            position: absolute;
+            right: 0;
+            transform: rotate(180deg);
+        }
+        .image-number{
+            position: absolute;
+            bottom: 30px;
+            font-size: 30px;
+            color: #FF6060;
+            font-weight: 400;
         }
 }

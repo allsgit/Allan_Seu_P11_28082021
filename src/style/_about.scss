@@ -1,13 +1,10 @@
-/* <div className="fiability"></div>
-<div className="respect"></div>
-<div className="service"></div>
-<div className="responsability"></div> */
-.about-section{
+.about-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    .menu-composant{
+
+    .menu-composant {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -19,25 +16,69 @@
         border-radius: 5px;
         color: white;
         font-weight: bold;
-         img{
-             transform: rotate(180deg);
-             margin: 0 10px;
-         }
-    
     }
-    .responsability{
+    .about-description{
+        color: black;
+    }
+    
+
+    .arrow {
+        width: auto;
+        transition: 0.2s;
+    }
+
+    .close-arrow {
+        width: auto;
+        transform: rotate(180deg);
+        transition: 0.2s;
+    }
+
+    .sub-menu-composant {
+        width: 1023px;     
+        overflow: hidden;
+        height: auto;
+        background-color: #F6F6F6;
+        transition: 2s;
+
+        .about-description{
+            margin-left: 20px;
+            transition: 0.6s;
+            opacity: 1;
+        }
+    }
+
+    .sub-menu-composant-closed {
+        width: 1023px;
+        height: 0;
+        overflow: hidden;
+        transition: 3s;
+       
+        .about-description{
+
+            opacity: 0;
+            transition: 0.4s;
+            color: green;
+            transform: translateY(-10px);
+            font-weight: 400;
+            margin-left: 20px;
+        }
+   
+
+    }
+
+    .responsability {
         margin-bottom: 201px;
     }
-    .explain-1,.explain-2, .explain-3,.explain-4{
+
+    .explain-1, .explain-2, .explain-3, .explain-4 {
         width: 1023px;
         height: 146px;
         background-color: #F6F6F6;
         color: #FF6060;
         display: flex;
-         p{
-             margin: 20px;
-         }
 
+        p {
+            margin: 20px;
+        }
     }
-
 }

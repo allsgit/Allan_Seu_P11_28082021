@@ -15,11 +15,6 @@
         align-items: center;
         padding: 6px;
 
-        /*             width: 115px;
-         */
-
-  /*             height: 25px;
-*/
 
         background-color: red;
         border-radius: 10px;
@@ -34,7 +29,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 582px;
     height: 47px;
     background-color: #FF6060;
     margin: 31px 0 0 0;
@@ -43,26 +37,17 @@
     font-weight: bold;
 }
 
-.sub-menu-composant {
-    width: 582px;
-    height: 246px;
-    background-color: #F6F6F6;
-    color: #FF6060;
-    display: flex;
-
-    p {
-        margin: 20px;
-    }
-}
 
 .menu-composant-wrap {
     margin: 0px 44px 20px;
 }
 
+
 .item-description {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    height: 400px;
 }
 
 .item-information {
@@ -114,4 +99,9 @@
             margin-right: 50px;
         }
     }
+}
+
+.house-equipement{
+    display: flex;
+    flex-direction: column;
 }
