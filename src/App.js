@@ -32,7 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Gallery />} />
           <Route path="/about" element={<About />} />
-          <Route path="/logement/:logementId" element={<FicheLogement />} />
+          <Route exact path="/logement/:logementId" element={<FicheLogement />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </main>

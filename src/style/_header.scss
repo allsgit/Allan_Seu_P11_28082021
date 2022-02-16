@@ -2,3 +2,39 @@ header{
 display: flex;
 justify-content: space-between;
 }
+.menu{
+    ul{
+    a{
+        color: #FF6060;
+        text-decoration: none
+        ;
+    }
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    .logo-img {
+        margin-left: 22px;
+        margin-top: 22px;
+        height: 48px;
+    }
+    .post-header{
+        margin: 0;
+    }
+    .menu{
+        ul{
+            margin-top: 38px;
+            margin-right: 14px;
+            a{
+                li{
+                    font-size: 12px;
+                    margin: 10px;
+                    width: 54px;
+                }
+            }
+
+        }
+    }
+} 
+

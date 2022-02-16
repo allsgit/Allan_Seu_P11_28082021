@@ -6,20 +6,25 @@ import Vendor_info from "./Vendor_info";
 import Item_Name_Town from "./Item_name_town";
 import Data from "./Data";
 import Banner2 from "./Banner2";
+import Rate from "./Rate";
 
 class FicheLogement extends React.Component {
   state = {
     imagePosition: 0,
   };
 
+
   render() {
     return Data.filter(
+      
       (element) =>
         element.id == window.location.pathname.replace("/logement/", "")
     ).map((element) => {
+
       //***
       /// BANNER IMAGE SWITCH FUNCTION WITH ARROW //
       //***
+      console.log(window.location.pathname);
       const imageSwitch = (e) => {
         // RIGHT ARROW //
         if (e.target.className == "white-arrow-right") {
@@ -53,7 +58,9 @@ class FicheLogement extends React.Component {
       };
 
       return (
+        
         <div key={element.id}>
+          
           <Banner2
             origin={element.pictures[this.state.imagePosition]}
             function={(e) => imageSwitch(e)}
@@ -73,7 +80,7 @@ class FicheLogement extends React.Component {
                 VendorName={element.host}
                 UserPicture={element.host}
               />
-              <div className="rate-line"></div>
+              <div className="rate-line"><Rate LogementRating={element.rating}/></div>
             </div>
           </section>
 
@@ -84,7 +91,7 @@ class FicheLogement extends React.Component {
             />
             <LocSheetMenu
               title="Equipements"
-              descript={element.pictures}
+              Descript={element.equipments}
             />
           </section>
         </div>

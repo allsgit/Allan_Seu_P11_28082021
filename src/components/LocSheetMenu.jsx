@@ -5,6 +5,7 @@ import arrow from "../images/arrow.png";
 class LocSheetMenu extends React.Component {
   state = {
     classStyle: "sheet-menu-explain",
+    pClassStyle: "description-text"
   };
 
   render() {
@@ -13,15 +14,17 @@ class LocSheetMenu extends React.Component {
         e.target.classList = "close-arrow";
         this.setState({
           classStyle: "sheet-menu-explain-closed",
+          pClassStyle: "description-text-opened"
         });
       } else {
         e.target.classList = "arrow";
         this.setState({
           classStyle: "sheet-menu-explain",
+          pClassStyle: "description-text"
         });
       }
     };
-    
+
     return (
       <div className="menu-sheet-wrap">
         <div className="sheet-menu-composant">
@@ -33,15 +36,9 @@ class LocSheetMenu extends React.Component {
           ></img>
         </div>
         <div className={this.state.classStyle}>
-          <p className="description-text">{this.props.Descriptions}</p>
+          <p className={this.state.pClassStyle}>{this.props.Descriptions}</p>
         </div>
-        <div className={this.state.classStyle}>
-      
-       <p className="description-text">{"équipement à mettre"}</p>
-  
         
-         
-        </div>
       </div>
     );
   }

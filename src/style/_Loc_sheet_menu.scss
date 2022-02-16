@@ -32,26 +32,44 @@
     .sheet-menu-explain {
         background-color: #F6F6F6;
         width: 101%;
-        height: 250px;
-        transition: 0.3s;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.2s;
     }
 
     .sheet-menu-explain-closed {
         background-color: #F6F6F6;
         width: 101%;
-        height: 0px;
-        transition: 0.3s;
+        height: 240px;
+        transition: 0.2s;
         overflow: hidden;
+        
     }
 
     .description-text {
         padding: 12px;
         font-size: 22px;
         color: #FF6060;
-        font-weight: 400; // à ajouter
+        font-weight: 400; 
+        transition: 0.6s;
+        transform: translateY(-50px);
+
+        opacity: 0;
+ 
+    }
+    .description-text-opened {
+        transition: 0.6s;
+        padding: 12px;
+        font-size: 22px;
+        color: #FF6060;
+        font-weight: 400; 
+        opacity: 1;
+        color: red;
+ 
     }
     
     .item-description{
         justify-content: space-between;
+        
     }
 }

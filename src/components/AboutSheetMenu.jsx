@@ -10,6 +10,8 @@ class MenuComposant extends React.Component {
   render() {
     const toogleMenu = (e) => {
       if (window.location.pathname.match("/about")) {
+         
+       
         if (e.target.className == "arrow") {
           e.target.classList = "close-arrow";
           this.setState({
@@ -23,6 +25,7 @@ class MenuComposant extends React.Component {
         }
       }
     };
+
 
     return (
       <div className="menu-composant-wrap">

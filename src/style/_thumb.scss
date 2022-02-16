@@ -22,3 +22,15 @@
         height: 100%;
     }
 }
+
+
+
+@media screen and (max-width: 414px) {
+    .thumb{
+        width: 353px;
+        height: 255px;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

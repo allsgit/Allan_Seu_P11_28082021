@@ -1,4 +1,4 @@
-.gallery{
+.gallery {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,15 +11,22 @@
     margin-bottom: 50px;
     border-radius: 25px;
     overflow-wrap: normal;
- 
-        .thumb{
-           
 
-            & :hover{
-                transition: 0.3s;
-                box-shadow: black 0px 3px 9px 0px;
-            }
+    .thumb {
+        & :hover {
+            transition: 0.3s;
+            box-shadow: black 0px 3px 9px 0px;
         }
+    }
+}
 
 
+@media screen and (max-width: 414px) {
+ main{
+     width: 390px;
+     .gallery{
+         width: 100%;
+         margin-top: 0;
+     }
+ }
 }
