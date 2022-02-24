@@ -2,7 +2,7 @@ import React from "react";
 import "../style/_ficheLogement.scss";
 import FullRateStar from "../images/rate_star_full.png";
 import EmptyRateStar from "../images/rate_star_empty.png";
-import { uuid } from "uuidv4";
+import { v4 as uuidv4 } from 'uuid';
 
 class Rate extends React.Component {
   render() {
@@ -11,9 +11,9 @@ class Rate extends React.Component {
       <>
         {starArray.map((element) =>
           element <= this.props.LogementRating ? (
-            <img src={FullRateStar} key={uuid()}></img>
+            <img src={FullRateStar} key={uuidv4()} alt=""></img>
           ) : (
-            <img src={EmptyRateStar} key={uuid()}></img>
+            <img src={EmptyRateStar} key={uuidv4()} alt=""></img>
           )
         )}
       </>

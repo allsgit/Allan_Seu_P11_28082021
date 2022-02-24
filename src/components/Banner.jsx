@@ -1,6 +1,5 @@
 import React from "react";
 import "../style/_banner.scss";
-import { useLocation } from "react-router";
 
 class Banner extends React.Component {
   render() {

@@ -1,8 +1,7 @@
 import React from "react";
 import "../style/_ficheLogement.scss";
-import { Fragment } from "react";
 
-class Item_Name_Town extends React.Component {
+class ItemNameTown extends React.Component {
   render() {
     return (
       <>
@@ -13,4 +12,4 @@ class Item_Name_Town extends React.Component {
   }
 }
 
-export default Item_Name_Town;
+export default ItemNameTown;

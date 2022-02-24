@@ -1,6 +1,5 @@
 import React from "react";
 import "../style/_about.scss";
-import arrow from "../images/arrow.png";
 import Banner from "./Banner";
 import Banner3 from "../images/Background-about.png";
 import MenuComposant from "./AboutSheetMenu";
