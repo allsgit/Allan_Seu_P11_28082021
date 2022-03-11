@@ -1,9 +1,98 @@
+.menu-sheet-wrap-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto; 
+    margin-bottom: 30px;
+ 
+    .sheet-menu-composant {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 47px;
+        background-color: #FF6060;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        padding: 0 5px;
+
+        
+
+        .arrow {
+            transition: 0.4s;
+        }
+
+        .close-arrow {
+            transition: 0.4s;
+            transform: rotate(180deg);
+            color: red;
+        }
+    }
+
+    .sheet-menu-explain {
+        background-color: #F6F6F6;
+        width: 101%;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.2s;
+
+        li {
+            list-style-type: none;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+
+    .sheet-menu-explain-closed {
+        background-color: #F6F6F6;
+        width: 101%;
+        height: 240px;
+        transition: 0.2s;
+        overflow: hidden;
+
+        li {
+            list-style-type: none;
+            font-size: 12px;
+
+            :not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .description-text {
+        padding: 12px;
+        font-size: 22px;
+        color: #FF6060;
+        font-weight: 400;
+        transition: 0.6s;
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    .description-text-opened {
+        transition: 0.6s;
+        padding: 12px;
+        font-size: 22px;
+        color: #FF6060;
+        font-weight: 400;
+        opacity: 1;
+        color: red;
+    }
+
+    .item-description {
+        justify-content: space-between;
+    }
+}
 .menu-sheet-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 47%;
-    height: auto;
+    height: auto; 
 
     .sheet-menu-composant {
         display: flex;
@@ -35,6 +124,12 @@
         height: 0px;
         overflow: hidden;
         transition: 0.2s;
+
+        li {
+            list-style-type: none;
+            font-size: 22px;
+            margin-top: 10px;
+        }
     }
 
     .sheet-menu-explain-closed {
@@ -43,33 +138,89 @@
         height: 240px;
         transition: 0.2s;
         overflow: hidden;
-        
+        ul{
+            li {
+                list-style-type: none;
+                margin-top: 10px;
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+        }
+
+      
+        }
     }
 
     .description-text {
         padding: 12px;
         font-size: 22px;
         color: #FF6060;
-        font-weight: 400; 
+        font-weight: 400;
         transition: 0.6s;
         transform: translateY(-50px);
-
         opacity: 0;
- 
     }
+
     .description-text-opened {
         transition: 0.6s;
         padding: 12px;
         font-size: 22px;
         color: #FF6060;
-        font-weight: 400; 
+        font-weight: 400;
         opacity: 1;
         color: red;
- 
-    }
+        margin: 0;
     
-    .item-description{
+    }
+
+    .item-description {
         justify-content: space-between;
-        
     }
 }
+@media screen and (max-width: 450px) {
+
+.menu-sheet-wrap-about{
+    .sheet-menu-explain-closed {
+        max-height: 149px;
+        display: flex;
+        align-items: center;
+        .description-text-opened{
+            transition: 0.6s;
+            padding: 12px;
+            font-size: 12px;
+            color: #FF6060;
+            font-weight: 400;
+            opacity: 1;
+            color: red;
+           
+        }
+  
+    }
+    .sheet-menu-explain {
+        display: flex;
+        align-items: center;
+        .description-text{
+            transition: 0.6s;
+            padding: 12px;
+            font-size: 12px;
+            color: #FF6060;
+            font-weight: 400;
+            opacity: 1;
+            color: red;
+            display: flex;
+            align-items: center;
+        }
+  
+    }
+
+}
+
+.menu-sheet-wrap{
+    .sheet-menu-composant{
+        width: 90%;
+    }
+}
+
+
+ }
+   

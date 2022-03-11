@@ -15,8 +15,6 @@
         justify-content: center;
         align-items: center;
         padding: 6px;
-
-
         background-color: #FF6060;
         border-radius: 10px;
         color: white;
@@ -38,11 +36,9 @@
     font-weight: bold;
 }
 
-
 .menu-composant-wrap {
     margin: 0px 44px 20px;
 }
-
 
 .item-description {
     display: flex;
@@ -80,7 +76,8 @@
             height: 70px;
             margin: 30px 0;
             overflow: hidden;
-            img{
+
+            img {
                 width: 100%;
             }
         }
@@ -89,23 +86,23 @@
             color: #FF6060;
             width: 93px;
         }
-        .rate-line{
+
+        .rate-line {
             margin: 0 0 32px 33px;
+
             :not(:last-child) {
                 margin-right: 10px;
             }
 
-            img{
+            img {
                 width: 30px;
                 height: 30px;
-                
             }
-  
         }
+
         .rating {
             width: 20px;
             height: 20px;
-          
         }
 
         .vendorBlock {
@@ -116,7 +113,106 @@
     }
 }
 
-.house-equipement{
+.house-equipement {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 414px) {
+
+    .main{
+        width:370px;
+    }
+    .information-div {
+        margin-bottom: -10px;
+    }
+
+    .item-information {
+        flex-direction: column;
+    
+
+        .vendor-information {
+            width: auto;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+
+            .vendor-name {
+                font-size: 12px;
+            }
+
+            .vendorBlock {
+                margin-left: 140px;
+            }
+
+            .vendor-profil-img {
+                width: 32px;
+                height: 32px;
+            }
+
+            .rate-line {
+                margin: 0;
+
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    .information-div {
+        .item-name {
+            font-size: 18px;
+        }
+
+        .item-town {
+            font-size: 14px;
+        }
+    }
+
+    .item-information {
+        width: 90%;
+        margin-bottom: -10px;
+        margin-left: 21px
+
+    }
+    .tag-line {
+        .tag {
+            width: 84px;
+            height: 10px;
+            font-size: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    .item-description {
+        flex-direction: column;
+        margin: 0;
+
+        .menu-sheet-wrap {
+            width: 100%;
+            margin-bottom: 20px;
+
+            .sheet-menu-explain-closed {
+                display: flex;
+                height: 170px;
+                width: 376px;
+                font-size: 12px;
+                align-items: center;
+            }
+
+            .sheet-menu-explain {
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                width: 376px;
+
+            }
+
+            .description-text, .description-text-opened {
+                font-size: 12px;
+            }
+        }
+    }
+ 
 }

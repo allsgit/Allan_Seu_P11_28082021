@@ -8,7 +8,7 @@ class Thumb extends React.Component {
     return Data.map((item) => {
       
       return (      
-        <Link to={`./logement/${item.id}`} key={item.id} foo={"kii"}>
+        <Link className="athumb" to={`./logement/${item.id}`} key={item.id} >
           <div className="thumb">
             <p className="loc-title">{item.title}</p>
             <img className="location-image" src={item.cover} alt="" />

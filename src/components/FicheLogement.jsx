@@ -99,8 +99,9 @@ class FicheLogement extends React.Component {
                 />
                 <LocSheetMenu
                   title="Equipements"
-                  Descript={element.equipments}
+                  foo={element.equipments.map(element => <li key={id + element}>{element}</li>)}
                 />
+         
               </section>
             </div>
           );
@@ -110,7 +111,7 @@ class FicheLogement extends React.Component {
 
     const characterInfo = getVendorInfo(id);
     const isVendorInAPI = checkIdValidity(id);
-    if (isVendorInAPI == false) return <Navigate replace to="*" />;
+    if (isVendorInAPI === false) return <Navigate replace to="*" />;
     return characterInfo;
   }
 }

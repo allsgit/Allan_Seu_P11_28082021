@@ -8,7 +8,7 @@ class Error404 extends React.Component {
       <div className="error-div">
         <h1 className="error">404</h1>
         <h2 className="error-msg">
-          Oups! La page que vous demandez n'existe pas.
+          Oups! La page que {window.innerWidth <420 ? <br></br> : ""}vous demandez n'existe pas.
         </h2>
         <Link to="../">
           <div className="back-to-link">Retourner sur la page d’accueil</div>

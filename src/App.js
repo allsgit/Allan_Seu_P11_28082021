@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import About from './components/About';
 import FicheLogement from './components/FicheLogement';
 import { Routes, Route } from 'react-router-dom';
-import {useLocation} from "react-router-dom"
 
 function App() {
   return (

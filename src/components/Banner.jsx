@@ -4,7 +4,7 @@ import "../style/_banner.scss";
 class Banner extends React.Component {
   render() {
     let adjustBanHeight = 900;
-    if (window.innerWidth <= 400) {
+    if (window.innerWidth <= 414) {
       adjustBanHeight = 450;
     } else {
       adjustBanHeight = "auto"

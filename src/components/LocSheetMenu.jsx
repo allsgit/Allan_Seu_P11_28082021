@@ -6,6 +6,8 @@ class LocSheetMenu extends React.Component {
   state = {
     classStyle: 'sheet-menu-explain',
     pClassStyle: 'description-text',
+    wrapLoc: "menu-sheet-wrap",
+    wrapAbout:"menu-sheet-wrap-about",
   };
 
   render() {
@@ -26,18 +28,24 @@ class LocSheetMenu extends React.Component {
     };
 
     return (
-      <div className="menu-sheet-wrap">
+      
+      <div className={(window.location.pathname !== "/about") ? this.state.wrapLoc : this.state.wrapAbout}>
         <div className="sheet-menu-composant">
           <p>{this.props.title}</p>
           <img
             className="arrow"
-            alt=''
+            alt=""
             src={arrow}
             onClick={(e) => toogleMenu(e)}
           ></img>
         </div>
+        
         <div className={this.state.classStyle}>
-          <p className={this.state.pClassStyle}>{this.props.Descriptions}</p>
+          {this.props.Descriptions ? (
+            <p className={this.state.pClassStyle}>{this.props.Descriptions}</p>
+          ) : (
+            <ul className={this.state.pClassStyle}> {this.props.foo}</ul>
+          )}
         </div>
       </div>
     );

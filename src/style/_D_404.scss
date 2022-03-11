@@ -31,3 +31,17 @@
         
 
 }
+
+@media screen and (max-width: 450px){
+    .error-div{
+        align-items: center;
+        .error{
+            font-size: 96px;
+        }
+        .error-msg{
+            margin: 20px;
+            font-size: 18px;
+        }
+    }
+   
+}
