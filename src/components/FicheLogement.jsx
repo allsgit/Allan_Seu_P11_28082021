@@ -5,7 +5,7 @@ import Tag from './Tag';
 import VendorInfo from './VendorInfo';
 import ItemNameTown from './ItemNameTown';
 import Data from './Data';
-import Banner2 from './Banner2';
+import BannerWrapper from './RentProviderBanner';
 import Rate from './Rate';
 import { useParams, Navigate } from 'react-router-dom';
 
@@ -50,8 +50,7 @@ class FicheLogement extends React.Component {
           if (e.target.className === 'white-arrow-left') {
             if (this.state.imagePosition === 0) {
               this.setState({
-                imagePosition:
-                  this.state.imagePosition + element.pictures.length - 1,
+                imagePosition: this.state.imagePosition + element.pictures.length - 1,
               });
             } else {
               this.setState({
@@ -64,7 +63,7 @@ class FicheLogement extends React.Component {
         if (element.id === id) {
           return (
             <div key={element.id}>
-              <Banner2
+              <BannerWrapper
                 function={(e) => imageSwitch(e)}
                 origin={element.pictures[this.state.imagePosition]}
                 positionShow={this.state.imagePosition}
@@ -73,19 +72,13 @@ class FicheLogement extends React.Component {
               <div className="logement-img"></div>
               <section className="item-information">
                 <div className="information-div">
-                  <ItemNameTown
-                    titre={element.title}
-                    place={element.location}
-                  />
+                  <ItemNameTown titre={element.title} place={element.location} />
                   <div className="tag-line">
                     <Tag Tags={element.tags} />
                   </div>
                 </div>
                 <div className="vendor-information">
-                  <VendorInfo
-                    VendorName={element.host}
-                    UserPicture={element.host}
-                  />
+                  <VendorInfo VendorName={element.host} UserPicture={element.host} />
                   <div className="rate-line">
                     <Rate LogementRating={element.rating} />
                   </div>
@@ -93,15 +86,13 @@ class FicheLogement extends React.Component {
               </section>
 
               <section className="item-description">
-                <LocSheetMenu
-                  Descriptions={element.description}
-                  title="description"
-                />
+                <LocSheetMenu Descriptions={element.description} title="description" />
                 <LocSheetMenu
                   title="Equipements"
-                  foo={element.equipments.map(element => <li key={id + element}>{element}</li>)}
+                  foo={element.equipments.map((element) => (
+                    <li key={id + element}>{element}</li>
+                  ))}
                 />
-         
               </section>
             </div>
           );
@@ -111,7 +102,7 @@ class FicheLogement extends React.Component {
 
     const characterInfo = getVendorInfo(id);
     const isVendorInAPI = checkIdValidity(id);
-    if (isVendorInAPI === false) return <Navigate replace to="*" />;
+    if (isVendorInAPI === false) return <Navigate replace to="" />;
     return characterInfo;
   }
 }

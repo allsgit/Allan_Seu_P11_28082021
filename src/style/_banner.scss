@@ -38,7 +38,7 @@
     }
 }
 
-.banner2 {
+.bannerwrapper {
     position: relative;
     width: 1240px;
     height: 403px;
@@ -50,6 +50,7 @@
     border-radius: 1px;
     background-color: black;
     overflow: hidden;
+    transition: 0.3s;
 
     .logement-ban {
         width: 100%;
@@ -74,6 +75,7 @@
         font-size: 18px;
         color: white;
         font-weight: 400;
+        transition: 1s;
     }
 }
 
@@ -103,11 +105,10 @@
         }
     }
 
-    .banner2 {
+    .bannerwrapper {
         width: 90%;
         border-radius: 10px;
         height: 335px;
-     
 
         .white-arrow-left, .white-arrow-right {
             width: 11.67px;

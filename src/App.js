@@ -20,8 +20,7 @@ function App() {
         <Routes>
           <Route exact path="/about" element={<About />} />
           <Route path="/logement/:id" element={<FicheLogement />} />
-          <Route path="*" element={<Error404 />} />
-          <Route path="/" element={<Gallery />} />
+          <Route path="*" element={<Gallery />} />
         </Routes>
       </main>
       <Footer />
@@ -30,3 +29,5 @@ function App() {
 }
 
 export default App;
+
+

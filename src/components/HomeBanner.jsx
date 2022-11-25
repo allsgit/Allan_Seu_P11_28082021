@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/_banner.scss";
 
-class Banner extends React.Component {
+class HomeBanner extends React.Component {
   render() {
     let adjustBanHeight = 900;
     if (window.innerWidth <= 414) {
@@ -28,4 +28,4 @@ class Banner extends React.Component {
   }
 }
 
-export default Banner;
+export default HomeBanner;

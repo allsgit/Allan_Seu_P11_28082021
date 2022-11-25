@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/_about.scss';
-import Banner from './Banner';
+import Banner from './HomeBanner';
 import Banner3 from '../images/Background-about.png';
 import LocSheetMenu from './LocSheetMenu';
 
