@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AZAK-p11/static/css/main.5e9e599a.chunk.css",
+    "main.css": "/AZAK-p11/static/css/main.4ca15c39.chunk.css",
     "main.js": "/AZAK-p11/static/js/main.826bf7a8.chunk.js",
     "main.js.map": "/AZAK-p11/static/js/main.826bf7a8.chunk.js.map",
     "runtime-main.js": "/AZAK-p11/static/js/runtime-main.5e128ac4.js",
@@ -8,7 +8,7 @@
     "static/js/2.b7067d66.chunk.js": "/AZAK-p11/static/js/2.b7067d66.chunk.js",
     "static/js/2.b7067d66.chunk.js.map": "/AZAK-p11/static/js/2.b7067d66.chunk.js.map",
     "index.html": "/AZAK-p11/index.html",
-    "static/css/main.5e9e599a.chunk.css.map": "/AZAK-p11/static/css/main.5e9e599a.chunk.css.map",
+    "static/css/main.4ca15c39.chunk.css.map": "/AZAK-p11/static/css/main.4ca15c39.chunk.css.map",
     "static/js/2.b7067d66.chunk.js.LICENSE.txt": "/AZAK-p11/static/js/2.b7067d66.chunk.js.LICENSE.txt",
     "static/media/Background-about.730e4846.png": "/AZAK-p11/static/media/Background-about.730e4846.png",
     "static/media/banBack.40371f11.png": "/AZAK-p11/static/media/banBack.40371f11.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.5e128ac4.js",
     "static/js/2.b7067d66.chunk.js",
-    "static/css/main.5e9e599a.chunk.css",
+    "static/css/main.4ca15c39.chunk.css",
     "static/js/main.826bf7a8.chunk.js"
   ]
 }
