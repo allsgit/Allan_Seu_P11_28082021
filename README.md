@@ -17,11 +17,7 @@ In this project it was asked to use only Class Component. (no functionnal compon
 <li>FETCH</li>
 </ul><ul>
 <li>SCSS</li>
-</ul><h2>Features</h2>
-<hr><ul>
-<li>NAVIGUATE ON EACH USER CARD</li>
-</ul><ul>
-<li>CAROUS</li>
+
 </ul><h2>Setup</h2>
 <hr><p>To make the project work the SASS dependency must be installed</p><h5>Steps</h5><ul>
 <li>1 / NPM INSTALL SASS</li>
