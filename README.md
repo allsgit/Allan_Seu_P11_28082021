@@ -1,4 +1,5 @@
 <h1>KASA</h1>
+<img src="https://i.ibb.co/ZmByLMp/Capture-d-e-cran-2022-12-09-a-16-41-03.png" alt="Capture-d-e-cran-2022-12-09-a-16-41-03" border="0">
 <hr><p>KASA</p>
 <p>KASA is a real estate rental site between individuals. This project comes from my OpenClassRooms training.
 In this project it was asked to use only Class Component. (no functionnal component)</p>
